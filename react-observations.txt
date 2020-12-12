@@ -1,0 +1,73 @@
+React Observation:
+Introduction react:
+react is js library
+
+Environment setup:
+install vs code
+install nodejs
+then in cmd:
+check: 
+node -v
+npm -v
+then,
+npm install -g create-react-app
+then,
+create-react-app --v
+
+
+First React APP:
+create-react-app APPNAME
+once it has done:
+get into app folder via CD command
+then start web server i.e
+npm start
+
+Folder structure and details:
+package.json important like pom.xml in maven
+index.js >> where initial page can write js which associate with index.html via div id root
+also app.js
+
+In index.js:
+React, ReactDOM library used to associate with react and JSX
+
+ReactDOM.render(WHAT TO SHOW(JSX),WHERE TO SHOW(root),CALL BACK);
+
+Edit index.js:
+can edit index.js by typical javascript way or manual
+
+JSX:
+javaScript XML/Extension
+
+Multiple-JSX-ELement:
+can group multiple jsx in index.js via
+<div>
+</div>
+
+or []
+
+but while using <div> to group it will create on more <div> tagin out root, to avoid that can use <React.Fragment> to group or simple <>
+
+
+Excercise 1:
+List Cult Moview you wish
+
+JSX Expression:{}
+can write expression in JSX using {} but can't statement i.e decision making ,,etc.
+const keyword is similar to var in javascript
+
+JSX Template Literals: ${}
+can write template literal using ${} for expression with ``
+
+Excercise 2:
+Show current data and time with Date class
+new Date().toLocalDateString()
+new Date().toLocalTimeString()
+
+JSX Attributes:
+normal html attributes are small cases, whereas JSX attributes will like java camelnotation
+eg:
+contenteditable>> html attribute
+contentEditable>> JSX attribute
+
+JSX images: All jsx need to close unlike html
+<img src=""/> or <img src={const}/>
